@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Todo({todo}) {
   return (
-    <div>{todo}</div>
+    <div>{todo.name}</div>
   )
 }
