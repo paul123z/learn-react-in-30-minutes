@@ -68,7 +68,7 @@ function App() {
      
     <div></div>
     <Button  onClick={handleClearTodos}>Clear Completed Todos</Button>
-    <div><h1>{todos.filter(todo => !todo.complete).length} left to do</h1></div>
+    <div><h1>{todos.filter(todo => !todo.complete).length} Left To Do</h1></div>
     </>
   );
 }
