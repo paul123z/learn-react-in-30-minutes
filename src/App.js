@@ -2,6 +2,8 @@ import React, {useState, useRef, useEffect} from 'react';
 import TodoList from './TodoList';
 import { v4 as uuidv4 } from 'uuid'; // generates random id
 import './App.css';
+import {Button} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 // {
@@ -56,8 +58,9 @@ function App() {
     <>
     <TodoList todos={todos} toggleTodo={toggleTodo}/>
     <input ref={todoNameRef} type="text"/>
-    <button  onClick={handleAddTodo}>Add Todo</button>
-    <button  onClick={handleClearTodos}>Clear Completed Todos</button>
+    <Button  onClick={handleAddTodo}>Add Todo</Button>
+    <div></div>
+    <Button  onClick={handleClearTodos}>Clear Completed Todos</Button>
     <div><h1>{todos.filter(todo => !todo.complete).length} left to do</h1></div>
     </>
   );
